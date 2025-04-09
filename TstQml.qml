@@ -13,6 +13,10 @@ Item {
     property string id_label: model.id_label
 
     ColumnLayout {
+
+        anchors.fill: parent
+        anchors.margins: 20
+
         Label {
             text: "Test QML"
         }

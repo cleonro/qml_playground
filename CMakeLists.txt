@@ -15,6 +15,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick QuickControls2
 set(PROJECT_SOURCES
         main.cpp
         qml.qrc
+        tstmodel.h tstmodel.cpp
+        choiceitem.h choiceitem.cpp
+        # cbmodel.h cbmodel.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -36,9 +39,6 @@ else()
     else()
         add_executable(TstQML5_01
           ${PROJECT_SOURCES}
-          tstmodel.h tstmodel.cpp
-          choiceitem.h choiceitem.cpp
-          # cbmodel.h cbmodel.cpp
         )
     endif()
 endif()
